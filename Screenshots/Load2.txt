@@ -1,0 +1,19 @@
+CREATE EXTERNAL TABLE staging_rider (
+	[Rider_Id] bigint,
+	[Address] nvarchar(4000),
+	[First_Name] nvarchar(4000),
+	[Last_Name] nvarchar(4000),
+	[Birthday] varchar(50),
+	[Account_start_date] varchar(50),
+	[Account_end_date] varchar(50),
+	[Is_member] bit
+	)
+	WITH (
+	LOCATION = 'Source/publicrider.csv',
+	DATA_SOURCE = [my1projectcontainer_my1projectacc_dfs_core_windows_net],
+	FILE_FORMAT = [SynapseDelimitedTextFormat]
+	)
+GO
+
+SELECT TOP 100 * FROM dbo.staging_rider
+GO
