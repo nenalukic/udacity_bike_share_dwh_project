@@ -27,7 +27,7 @@ You will:
 - Use the built-in serverless SQL pool and database within the Synapse workspace
 - In the cloud lab Azure environment, you will only be able to use the built-in serverless SQL Pool.
 
-![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/nevenkalukic/Azure_kurs/Project_Bike_Share/Screenshots/Task_1_Create_your_Azure_resources.png?version%3D1695291670829)
+![Alt text](Screenshots/Task_1_Create_your_Azure_resources.png)
 
 ## Task 2: Design a star schema
 
@@ -44,19 +44,19 @@ To prepare your environment for this project, you first must create the data in 
 - Run the script and verify that all four data files are copied/uploaded into PostgreSQL
 - You can verify this data exists by using pgAdmin or a similar PostgreSQL data tool.
 
-![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/nevenkalukic/Azure_kurs/Project_Bike_Share/Screenshots/Task_3_Create%20_the_data_in_PostgreSQL.png?version%3D1695291607966)
+![Alt text](Screenshots/Task_3_Create%20_the_data_in_PostgreSQL.png)
 
 ## Task 4: EXTRACT the data from PostgreSQL
 
 In your Azure Synapse workspace, you will use the ingest wizard to create a one-time pipeline that ingests the data from PostgreSQL into Azure Blob Storage. This will result in all four tables being represented as text files in Blob Storage, ready for loading into the data warehouse.
 
-![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/nevenkalukic/Azure_kurs/Project_Bike_Share/Screenshots/Task_4_EXTRACT_the_data_from_PostgreSQL.png?version%3D1695291561066)
+![Alt text](Screenshots/Task_4_EXTRACT_the_data_from_PostgreSQL.png)
 
 ## Task 5: LOAD the data into external tables in the data warehouse
 
 Once in Blob storage, the files will be shown in the data lake node in the Synapse Workspace. From here, you can use the script-generating function to load the data from blob storage into external staging tables in the data warehouse you created using the serverless SQL Pool.
 
-![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/nevenkalukic/Azure_kurs/Project_Bike_Share/Screenshots/Task_5_LOAD_the_data_into_external_tables_in_the_data_warehouse.png?version%3D1695291458580)
+![Alt text](Screenshots/Task_5_LOAD_the_data_into_external_tables_in_the_data_warehouse.png)
 
 ## Task 6: TRANSFORM the data to the star schema using CETAS
 
@@ -67,4 +67,4 @@ The serverless SQL pool won't allow you to create persistent tables in the datab
 - Look att the Load.txt files
 
 
-![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/nevenkalukic/Azure_kurs/Project_Bike_Share/Screenshots/Task_6_TRANSFORM_the_data_to_the_star_schema_using_CETAS.png?version%3D1695291267226)
+![Alt text](Screenshots/Task_6_TRANSFORM_the_data_to_the_star_schema_using_CETAS.png)
